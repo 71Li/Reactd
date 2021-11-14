@@ -41,3 +41,8 @@
 
 }
 
+@mixin alt_style( $background, $border,$color){
+  background: $background;
+  border-color: $border;
+  color: $color;
+}

@@ -90,7 +90,7 @@ $border-radius: .25rem !default;
 $border-radius-lg: .3rem !default;
 $border-radius-sm: .2rem !default;
 
-// 按钮
+// 一、按钮
 // 按钮基本属性
 $btn-font-family: $font-family-base !default;
 $btn-font-size: $font-family-base !default;
@@ -123,4 +123,19 @@ $btn-link-disabled-color: $gray-600 !default;
 $btn-border-radius: $border-radius !default;
 $btn-border-radius-lg: $border-radius-lg !default;
 $btn-border-radius-sm: $border-radius-sm !default;
-$btn-transition: color .15s ease-in-out, background-color .15s
+$btn-transition: color .15s ease-in-out, background-color .15s;
+
+
+// 二、弹框
+// 弹框基本属性
+$alt-font-family: $font-family-base !default;
+$alt-font-size: $font-size-sm !default;
+$alt-font-weight: 300;
+$alt-padding-y: .375rem !default;
+$alt-padding-x: .75rem !default;
+$alt-line-height: $line-height-base !default;
+// 弹框边框
+$alt-border-width: $border-width !default;
+// 弹框其他
+$alt-box-shadow: inset 0 1px 0 rgba($white,.15),0 1px 1px rgba($black, .075) !default;
+$alt-disabled-opacity: .65 !default;

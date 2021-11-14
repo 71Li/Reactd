@@ -1,0 +1,30 @@
+.alert{
+    position: relative;
+    display: inline-block;
+    font-weight: $alt-font-weight;
+    line-height: $alt-line-height;
+    color: $body-color;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    background-image: none;
+    border: $alt-border-width solid transparent;
+    alt-padding-y: $alt-padding-y;
+    alt-padding-x: $alt-padding-x;
+    alt-font-size: $alt-font-size;
+    box-shadow: $alt-box-shadow;
+    cursor: pointer;
+  }
+
+  .alt-primary{
+    @include button-style($primary,$primary, $white)
+  }
+  .alt-success{
+    @include button-style($success,$success, $white)
+  }
+  .alt-danger{
+    @include button-style($danger,$danger, $white)
+  }
+  .alt-default{
+    @include button-style($white,$gray-400,$body-color,$white,$primary,$primary)
+  }

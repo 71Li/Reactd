@@ -1,30 +1,58 @@
 .alert{
+  position: relative;
+  margin: auto;
+  width: 600px;
+  display: block;
+  font-weight: $alt-font-weight;
+  line-height: $alt-line-height;
+  color:$black;
+  border: $alt-border-width solid transparent;
+  border-radius: $border-radius;
+  box-shadow: $alt-box-shadow;
+  padding: $alt-padding-y $alt-padding-x;
+  font-size: $alt-font-size;
+  text-align: center;
+  vertical-align: center;
+  white-space: normal;
+  transition: $btn-transition;
+  >div {
     position: relative;
-    display: inline-block;
-    font-weight: $alt-font-weight;
-    line-height: $alt-line-height;
-    color: $body-color;
-    white-space: nowrap;
-    text-align: center;
-    vertical-align: middle;
-    background-image: none;
-    border: $alt-border-width solid transparent;
-    alt-padding-y: $alt-padding-y;
-    alt-padding-x: $alt-padding-x;
-    alt-font-size: $alt-font-size;
-    box-shadow: $alt-box-shadow;
+    .alt-message {
+      font-weight: $font-weight-bold;
+      line-height: normal;
+      text-align: center;
+      color: black;
+    }
+    .alt-desc {
+      color: #000;
+      display: block;
+      font-size: $alt-font-size*0.8;
+    }
+
+  }
+  .alt-cancel{
+    display: block;
+    right: $alt-font-size*(6.5);
+    color: #dc3545;
+    font-weight: 400;
     cursor: pointer;
   }
 
-  .alt-primary{
-    @include button-style($primary,$primary, $white)
+
+
+
   }
-  .alt-success{
-    @include button-style($success,$success, $white)
-  }
-  .alt-danger{
-    @include button-style($danger,$danger, $white)
-  }
-  .alt-default{
-    @include button-style($white,$gray-400,$body-color,$white,$primary,$primary)
-  }
+
+.alt-info{
+  @include button-style($primary,$primary, $white)
+}
+.alt-success{
+  @include button-style($success,$success, $white)
+}
+.alt-error{
+  @include button-style(lighten($danger,0.5%),$danger, $white)
+}
+.alt-warning{
+  @include button-style($white,$gray-400,$body-color,$white,$primary,$primary)
+}
+

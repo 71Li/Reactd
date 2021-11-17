@@ -1,64 +1,57 @@
 import React from "react";
-// import classNames from 'classnames'
-
-export const enum AltMessage{
-    TiShi = '提示',
-    JingGao = '警告',
-    ShiBai= '失败',
-    ChengGong = '成功'
-}
+import classNames from 'classnames'
+import {useState} from 'react'
 
 export const enum AltType{
     Info = 'info',
     Error = 'error',
-    Warning = 'waring',
+    Warning = 'warning',
     Success = 'success'
 }
 
 interface AltProps{
-    // className ?: string;
-    closable ?: boolean;
-    message ?: AltMessage;
-    type ?: AltType;
-    children : React.ReactNode;
-    icon : boolean;
-    description ?:string
+    altType ?: AltType;
+    message ?: string;
+    show ?: boolean;
+    className ?: string
+    children ?: React.ReactNode
 }
-type nativeAltProps = AltProps & React.AllHTMLAttributes<HTMLElement>
-type anchorAltProps = AltProps & React.AnchorHTMLAttributes<HTMLElement>
-export type altProps = Partial<nativeAltProps & anchorAltProps>
+export type altProps = Partial<React.ButtonHTMLAttributes<HTMLElement> & AltProps>
 
-const Alert: React.FC<altProps>= (props) => {
+const Alert:React.FC<altProps>= (props) => {
+    const [altElem, setAltElem] = useState(false);
     const {
-        // className,
-        closable ,
+        altType,
         message,
-        type ,
+        show,
+        className,
         children,
-        icon ,
-        description ,
         ...restProps
-    }= props
-
-
-    // const classes = classNames('alt',className,{
-    //     [`alt-${type}`]: type
-    // })
-
+    } = props
+    const classes = classNames('alert',className, {
+        [`alt-${altType}`]: altType
+    });
+    const altShow = ()=>{
+        setAltElem(true)
+    }
 
     return (
-            <Alert
-                // className={classes}
-                closable={closable}
-                {...restProps}
-            >    {children}
-            </Alert>
-        )
-}
+        <div className={classes} {...restProps}>
+            <div>
+                <span className={'alt-message'}>{message}</span>
+                <span className={'alt-desc'}>{children}</span>
+            </div>
+            {show && <span className={'alt-cancel'} onClick={altShow}>x</span>}
+
+
+
+        </div>
+    );}
 
 Alert.defaultProps = {
-    closable: true,
-    type: AltType.Info
-}
+        altType: AltType.Info,
+        message: '标题',
+        show:true
+    }
 
 export default Alert;

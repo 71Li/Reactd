@@ -129,11 +129,12 @@ $btn-transition: color .15s ease-in-out, background-color .15s;
 // 二、弹框
 // 弹框基本属性
 $alt-font-family: $font-family-base !default;
-$alt-font-size: $font-size-sm !default;
+$alt-font-size: $font-size-base !default;
 $alt-font-weight: 300;
 $alt-padding-y: .375rem !default;
 $alt-padding-x: .75rem !default;
-$alt-line-height: $line-height-base !default;
+$alt-line-height: $line-height-base*1.2 !default;
+
 // 弹框边框
 $alt-border-width: $border-width !default;
 // 弹框其他

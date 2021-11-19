@@ -7,7 +7,7 @@
   line-height: $alt-line-height;
   color:$black;
   border: $alt-border-width solid transparent;
-  border-radius: $border-radius;
+  border-radius: 20px 20px 20px 20px;
   box-shadow: $alt-box-shadow;
   padding: $alt-padding-y $alt-padding-x;
   font-size: $alt-font-size;
@@ -30,17 +30,30 @@
     }
 
   }
-  .alt-cancel{
-    display: block;
-    right: $alt-font-size*(6.5);
-    color: #dc3545;
-    font-weight: 400;
+  .alt-cancel {
+    height: 32px !important;
+    width: 42px !important;
+    display: inline-block;
+    border: 1.8px solid #dc3545;
+    border-radius: 50%;
+    background-color: $gray-300;
+    margin-top: 30px;
+    margin-bottom: 2px;
+    color: red;
+    font-weight: normal;
     cursor: pointer;
+
+    &:hover {
+      background-color: white;
+      font-weight: bold;
+    }
+
+    &:focus, &.focus {
+
+      background-color: white;
+      font-weight: bold;
+    }
   }
-
-
-
-
   }
 
 .alt-info{

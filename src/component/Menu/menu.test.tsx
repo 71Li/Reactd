@@ -5,20 +5,20 @@ import MenuItem,{MenuItemProps} from "./menuItem";
 
 
 const testProps:MenuProps = {
-    defaultIndex: 0,
+    defaultIndex: "0",
     onSelect: jest.fn(),
     className: 'test'
 }
 const testVerProps:MenuProps = {
-    defaultIndex: 0,
+    defaultIndex: "0",
     mode: 'vertical'
 }
 const generateMenu = (props:MenuProps)=>{
     return(
         <Menu {...props}>
-            <MenuItem index={0}>active</MenuItem>
-            <MenuItem index={1} disabled>disabled</MenuItem>
-            <MenuItem index={2}>xyz</MenuItem>
+            <MenuItem >active</MenuItem>
+            <MenuItem  disabled>disabled</MenuItem>
+            <MenuItem >xyz</MenuItem>
 
         </Menu>
     )
@@ -45,7 +45,7 @@ describe('test Menu and MenuItem component.',()=>{
         fireEvent.click(thirdItem)
         expect(thirdItem).toHaveClass('is-active')
         expect(activeElement).not.toHaveClass('is-active')
-        expect(testProps.onSelect).toHaveBeenCalledWith(2)
+        expect(testProps.onSelect).toHaveBeenCalledWith("2")
         fireEvent.click(disabledElement)
         expect(disabledElement).not.toHaveClass('is-active')
         expect(testProps.onSelect).not.toHaveBeenCalledWith(1)

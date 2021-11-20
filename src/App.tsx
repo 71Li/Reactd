@@ -3,6 +3,7 @@ import React from 'react';
 import Alert, {AltType} from "./component/Alert/alert";
 import Menu from "./component/Menu/menu";
 import MenuItem from "./component/Menu/menuItem";
+import SubMenu from "./component/Menu/subMenu";
 function App() {
     // @ts-ignore
     return (
@@ -16,10 +17,14 @@ function App() {
             {/*<Alert message={"这是标题1"} altType={AltType.Success} show={false}> 这是详细内容</Alert>*/}
 
             {/*<Alert message={"这是标题2"} altType={AltType.Info}> 这是详细内容</Alert>*/}
-                <Menu mode={"vertical"} defaultIndex={0} onSelect={(index)=>{alert(index)}}>
-                    <MenuItem index={1}>列表项1</MenuItem>
-                    <MenuItem index={2} disabled>列表项2</MenuItem>
-                    <MenuItem index={3}>列表项3</MenuItem>
+                <Menu mode={"horizontal"} defaultIndex={"0"} onSelect={(index)=>{alert(index)}} defaultOPenSubMenus={['2']}>
+                    <MenuItem >列表项1</MenuItem>
+                    <MenuItem  disabled>列表项2</MenuItem>
+                    <SubMenu title={'子菜单'} >
+                        <MenuItem >sub列表项1</MenuItem>
+                        <MenuItem  disabled>sub列表项2</MenuItem>
+                    </SubMenu>
+                    <MenuItem >列表项3</MenuItem>
 
                 </Menu>
 

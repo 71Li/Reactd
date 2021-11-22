@@ -37,6 +37,19 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
+//
+
+$theme-colors:
+        (
+                "primary":    $primary,
+                "secondary":  $secondary,
+                "success":    $success,
+                "info":       $info,
+                "warning":    $warning,
+                "danger":     $danger,
+                "light":      $light,
+                "dark":       $dark
+        );
 
 // 2. 字体系统
 // 无衬线字体(黑体)，等宽字体

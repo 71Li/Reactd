@@ -4,6 +4,7 @@
 @import "variables";
 // layout
 @import "reboot";
+
 //
 // mixin
 @import "src/styles/mixin";
@@ -13,3 +14,7 @@
 @import "src/component/Alert/style";
 // menu样式
 @import "src/component/Menu/style";
+// Icon样式
+@import "src/component/Icon/style";
+//animation
+@import "animation";

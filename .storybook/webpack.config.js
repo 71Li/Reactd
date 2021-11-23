@@ -12,13 +12,26 @@ module.exports = ({ config }) => {
         }
       },
       {
-        loader: require.resolve("react-docgen-typescript-loader")
+        // 自动生成文档插件
+        loader: require.resolve("react-docgen-typescript-loader"),
+        options: {
+          shouldExtractLiteralValuesFromEnum: true,
+          propFilter: (prop)=>{
+            if(prop.parent){
+              return !prop.parent.fileName.includes('node_modules')
+            }
+            return true
+          }
+        }
+      },
+      {
+        loader: 'style-loader'
       }
     ],
     test: /\.tsx?$/
   });
 
-  config.resolve.extensions.push(".ts", ".tsx","jsx");
+  config.resolve.extensions.push(".ts", ".tsx",".jsx");
 
   return config;
 };

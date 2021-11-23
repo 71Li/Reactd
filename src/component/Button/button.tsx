@@ -8,10 +8,11 @@ export const enum ButtonSize{
 }
 
 export const enum ButtonType{
+
     Primary = 'primary',
-    Default = 'default',
     Danger = 'danger',
     Link = 'link',
+    Default = 'default',
     Success = 'success'
 }
 

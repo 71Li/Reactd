@@ -31,6 +31,9 @@
 .btn-sm{
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm,$btn-font-size-sm,$border-radius-sm);
 }
+.btn-default{
+  @include button-style($white,$gray-400,$body-color,$white,$primary,$primary)
+}
 .btn-primary{
   @include button-style($primary,$primary, $white)
 }
@@ -40,9 +43,7 @@
 .btn-danger{
   @include button-style($danger,$danger, $white)
 }
-.btn-default{
-  @include button-style($white,$gray-400,$body-color,$white,$primary,$primary)
-}
+
 
 .btn-link{
   font-weight: $font-weight-normal;

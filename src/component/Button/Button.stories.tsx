@@ -3,9 +3,6 @@ import Button, {ButtonSize, ButtonType} from "./button";
 import {storiesOf} from '@storybook/react'
 import {action} from "@storybook/addon-actions";
 
-/**
- * Button组件
- * */
 
 const defaultButton = () => (
     <Button onClick={action('clicked')} >default button </Button>

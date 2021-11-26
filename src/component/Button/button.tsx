@@ -1,5 +1,5 @@
 import React,{FC,ButtonHTMLAttributes,AnchorHTMLAttributes}from "react";
-import classNames from 'classnames'
+import classNames from "classnames";
 
 export const enum ButtonSize{
     Large = 'lg',
@@ -25,6 +25,7 @@ interface BaseButtonProps{
     children : React.ReactNode;
     href ?: string
 }
+//  Partial可选项
 type nativeButtonProps = BaseButtonProps & ButtonHTMLAttributes<HTMLElement>
 type anchorButtonProps = BaseButtonProps & AnchorHTMLAttributes<HTMLElement>
 export type buttonProps = Partial<nativeButtonProps & anchorButtonProps>

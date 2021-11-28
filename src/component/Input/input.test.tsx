@@ -3,18 +3,16 @@ import { render, fireEvent } from '@testing-library/react'
 
 import { Input, InputProps } from './input'
 
-
 const defaultProps: InputProps = {
   onChange: jest.fn(),
   placeholder: 'test-input'
 }
-// @ts-ignore
 describe('test Input component', () => {
   it('should render the correct default Input', () => {
     const wrapper = render(<Input {...defaultProps}/>)
-    const testNode = wrapper.getByPlaceholderText('test-input') as HTMLInputElement;
+    const testNode = wrapper.getByPlaceholderText('test-input') as HTMLInputElement
     expect(testNode).toBeInTheDocument()
-    expect(testNode).toHaveClass('input-inner')
+    expect(testNode).toHaveClass('viking-input-inner')
     fireEvent.change(testNode, { target: { value: '23' } })
     expect(defaultProps.onChange).toHaveBeenCalled()
     expect(testNode.value).toEqual('23')
@@ -26,12 +24,12 @@ describe('test Input component', () => {
   })
   it('should render different input sizes on size property', () => {
     const wrapper = render(<Input placeholder="sizes" size="lg" />)
-    const testContainer = wrapper.container.querySelector('.input-wrapper')
+    const testContainer = wrapper.container.querySelector('.viking-input-wrapper')
     expect(testContainer).toHaveClass('input-size-lg')
   })
   it('should render prepand and append element on prepand/append property', () => {
     const {queryByText, container } = render(<Input placeholder="pend" prepend="https://" append=".com"/>)
-    const testContainer = container.querySelector('.input-wrapper')
+    const testContainer = container.querySelector('.viking-input-wrapper')
     expect(testContainer).toHaveClass('input-group input-group-append input-group-prepend')
     expect(queryByText('https://')).toBeInTheDocument()
     expect(queryByText('.com')).toBeInTheDocument()

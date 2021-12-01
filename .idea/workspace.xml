@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="62385335-77ca-462f-8fa0-eab38546f1f6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/component/Menu/menu.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Menu/menu.stories.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="Sass File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="81474d1a-2e80-402f-9be7-222fc3482719" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="git@github.com:71Li/Reactd.git" />
+        <option value="git@github.com:lian7171/Reactd.git" />
+      </set>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/styles/_reboot.scss" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/.storybook/main.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/component/Upload/upload.test.tsx" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/component/Button/Button.stories.tsx" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/component/Button/_style.scss" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\SoftWareDownload\IntelliJ IDEA\IntelliJ IDEA 2018.3.2\plugins\maven1\repository" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven1" />
+        <option name="userSettingsFile" value="D:\SoftWareDownload\IntelliJ IDEA\IntelliJ IDEA 2018.3.2\plugins\maven1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="10" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="20o7PqLTGODnR5uLftaurCW9oub" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component/Menu" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="D:/Nodejs/Nodejs/node" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="ts.external.directory.path" value="F:\react\reactd\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\react\reactd\src\component\Button" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\react\reactd\src\component\Menu" />
+      <recent name="F:\react\reactd" />
+      <recent name="F:\react\reactd\src" />
+      <recent name="F:\react\reactd\src\component\Progress" />
+      <recent name="F:\react\reactd\src\component\Icon" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.test Input component">
+    <configuration name="test Input component" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/component/Input/input.test.tsx" />
+      <test-names>
+        <test-name value="test Input component" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="test Menu and MenuItem component." type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/component/Menu/menu.test.tsx" />
+      <test-names>
+        <test-name value="test Menu and MenuItem component." />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="test Menu and MenuItem component..click items should change active and call right callback" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/component/Menu/menu.test.tsx" />
+      <test-names>
+        <test-name value="test Menu and MenuItem component." />
+        <test-name value="click items should change active and call right callback" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="test Menu and MenuItem component..should render correct Menu and MenuItem bases on default props." type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/component/Menu/menu.test.tsx" />
+      <test-names>
+        <test-name value="test Menu and MenuItem component." />
+        <test-name value="should render correct Menu and MenuItem bases on default props." />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="test Menu and MenuItem component..should render vertical mode when mode is set to vertical" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/component/Menu/menu.test.tsx" />
+      <test-names>
+        <test-name value="test Menu and MenuItem component." />
+        <test-name value="should render vertical mode when mode is set to vertical" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.test Input component" />
+        <item itemvalue="Jest.test Menu and MenuItem component." />
+        <item itemvalue="Jest.test Menu and MenuItem component..click items should change active and call right callback" />
+        <item itemvalue="Jest.test Menu and MenuItem component..should render vertical mode when mode is set to vertical" />
+        <item itemvalue="Jest.test Menu and MenuItem component..should render correct Menu and MenuItem bases on default props." />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62385335-77ca-462f-8fa0-eab38546f1f6" name="Default Changelist" comment="" />
+      <created>1636699066663</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636699066663</updated>
+      <workItem from="1636699079708" duration="659000" />
+      <workItem from="1636699875087" duration="252000" />
+      <workItem from="1636700161572" duration="18286000" />
+      <workItem from="1636794128004" duration="11860000" />
+      <workItem from="1636818109697" duration="624000" />
+      <workItem from="1636818756988" duration="8790000" />
+      <workItem from="1636872815030" duration="436000" />
+      <workItem from="1636873505904" duration="646000" />
+      <workItem from="1636874256794" duration="969000" />
+      <workItem from="1636875290248" duration="9913000" />
+      <workItem from="1636987346068" duration="11187000" />
+      <workItem from="1637082037252" duration="2575000" />
+      <workItem from="1637148744507" duration="15352000" />
+      <workItem from="1637209122116" duration="23728000" />
+      <workItem from="1637582183409" duration="13585000" />
+      <workItem from="1637653615561" duration="26085000" />
+      <workItem from="1637722366739" duration="9039000" />
+      <workItem from="1637735089688" duration="33704000" />
+      <workItem from="1637929390528" duration="2366000" />
+      <workItem from="1638077418680" duration="6241000" />
+      <workItem from="1638085136599" duration="11901000" />
+      <workItem from="1638152107153" duration="35821000" />
+    </task>
+    <task id="LOCAL-00001" summary="reactd组件库第一次提交">
+      <created>1636815691988</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636815691988</updated>
+    </task>
+    <task id="LOCAL-00002" summary="reactd组件库第一次提交">
+      <created>1636819177515</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636819177515</updated>
+    </task>
+    <task id="LOCAL-00003" summary="reactd组件库第一次提交">
+      <created>1636903238581</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636903238582</updated>
+    </task>
+    <task id="LOCAL-00004" summary="reactd组件库第一次提交">
+      <created>1637170717917</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637170717917</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Menu组件修改">
+      <created>1637336796254</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1637336796254</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Menu组件修改">
+      <created>1637423898240</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637423898240</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Adds Icon and Transition.">
+      <created>1637595235690</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637595235691</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adds storybook">
+      <created>1637683080555</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637683080555</updated>
+    </task>
+    <task id="LOCAL-00009" summary="story全局样式配置">
+      <created>1637686907859</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637686907859</updated>
+    </task>
+    <task id="LOCAL-00010" summary=".">
+      <created>1638108965925</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1638108965925</updated>
+    </task>
+    <task id="LOCAL-00011" summary=".">
+      <created>1638154347463</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1638154347463</updated>
+    </task>
+    <task id="LOCAL-00012" summary=".">
+      <created>1638156773511</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1638156773511</updated>
+    </task>
+    <task id="LOCAL-00013" summary="reactd模块入口">
+      <created>1638174868310</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1638174868310</updated>
+    </task>
+    <task id="LOCAL-00014" summary="reactd ES6 Module编译配置">
+      <created>1638177765469</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1638177765469</updated>
+    </task>
+    <task id="LOCAL-00015" summary="..">
+      <created>1638372135571</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1638372135571</updated>
+    </task>
+    <task id="LOCAL-00016" summary="..">
+      <created>1638373105906</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1638373105906</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="REGEX" value="true" />
+                  <option name="MATCH_CASE" value="true" />
+                </TextFilterSettings>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="reactd组件库第一次提交" />
+    <MESSAGE value="Menu组件修改" />
+    <MESSAGE value="Adds Icon and Transition." />
+    <MESSAGE value="Adds storybook" />
+    <MESSAGE value="story全局样式配置" />
+    <MESSAGE value="." />
+    <MESSAGE value="reactd模块入口" />
+    <MESSAGE value="reactd ES6 Module编译配置" />
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="462" y="350" key="#ESLint" timestamp="1637735432200">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="462" y="350" key="#ESLint/0.40.1536.824@0.40.1536.824" timestamp="1637735432200" />
+    <state x="654" y="317" width="494" height="270" key="#Notifications" timestamp="1636874395371">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="654" y="317" width="494" height="270" key="#Notifications/0.40.1536.824@0.40.1536.824" timestamp="1636874395371" />
+    <state x="499" y="200" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1637776876211">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="499" y="200" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1536.824@0.40.1536.824" timestamp="1637776876211" />
+    <state x="396" y="40" key="CommitChangelistDialog2" timestamp="1638373104856">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="396" y="40" key="CommitChangelistDialog2/0.40.1536.824@0.40.1536.824" timestamp="1638373104856" />
+    <state x="93" y="133" width="1350" height="638" key="DiffContextDialog" timestamp="1636817944928">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="93" y="133" width="1350" height="638" key="DiffContextDialog/0.40.1536.824@0.40.1536.824" timestamp="1636817944928" />
+    <state x="271" y="265" key="FileChooserDialogImpl" timestamp="1636818394556">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="271" y="265" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1636818394556" />
+    <state width="957" height="238" key="GridCell.Tab.0.bottom" timestamp="1638372293827">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="957" height="238" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1638372293827" />
+    <state width="957" height="238" key="GridCell.Tab.0.center" timestamp="1638372293827">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="957" height="238" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1638372293827" />
+    <state width="957" height="238" key="GridCell.Tab.0.left" timestamp="1638372293827">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="957" height="238" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1638372293827" />
+    <state width="957" height="238" key="GridCell.Tab.0.right" timestamp="1638372293827">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="957" height="238" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1638372293827" />
+    <state width="673" height="179" key="GridCell.Tab.1.bottom" timestamp="1637424089558">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="673" height="179" key="GridCell.Tab.1.bottom/0.40.1536.824@0.40.1536.824" timestamp="1637424089558" />
+    <state width="673" height="179" key="GridCell.Tab.1.center" timestamp="1637424089558">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="673" height="179" key="GridCell.Tab.1.center/0.40.1536.824@0.40.1536.824" timestamp="1637424089558" />
+    <state width="673" height="179" key="GridCell.Tab.1.left" timestamp="1637424089558">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="673" height="179" key="GridCell.Tab.1.left/0.40.1536.824@0.40.1536.824" timestamp="1637424089558" />
+    <state width="673" height="179" key="GridCell.Tab.1.right" timestamp="1637424089558">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="673" height="179" key="GridCell.Tab.1.right/0.40.1536.824@0.40.1536.824" timestamp="1637424089558" />
+    <state width="673" height="179" key="GridCell.Tab.2.bottom" timestamp="1637424089558">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="673" height="179" key="GridCell.Tab.2.bottom/0.40.1536.824@0.40.1536.824" timestamp="1637424089558" />
+    <state width="673" height="179" key="GridCell.Tab.2.center" timestamp="1637424089558">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="673" height="179" key="GridCell.Tab.2.center/0.40.1536.824@0.40.1536.824" timestamp="1637424089558" />
+    <state width="673" height="179" key="GridCell.Tab.2.left" timestamp="1637424089558">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="673" height="179" key="GridCell.Tab.2.left/0.40.1536.824@0.40.1536.824" timestamp="1637424089558" />
+    <state width="673" height="179" key="GridCell.Tab.2.right" timestamp="1637424089558">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="673" height="179" key="GridCell.Tab.2.right/0.40.1536.824@0.40.1536.824" timestamp="1637424089558" />
+    <state width="673" height="179" key="GridCell.Tab.3.bottom" timestamp="1637424089559">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="673" height="179" key="GridCell.Tab.3.bottom/0.40.1536.824@0.40.1536.824" timestamp="1637424089559" />
+    <state width="673" height="179" key="GridCell.Tab.3.center" timestamp="1637424089558">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="673" height="179" key="GridCell.Tab.3.center/0.40.1536.824@0.40.1536.824" timestamp="1637424089558" />
+    <state width="673" height="179" key="GridCell.Tab.3.left" timestamp="1637424089558">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="673" height="179" key="GridCell.Tab.3.left/0.40.1536.824@0.40.1536.824" timestamp="1637424089558" />
+    <state width="673" height="179" key="GridCell.Tab.3.right" timestamp="1637424089559">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state width="673" height="179" key="GridCell.Tab.3.right/0.40.1536.824@0.40.1536.824" timestamp="1637424089559" />
+    <state x="389" y="156" key="SettingsEditor" timestamp="1638365015710">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="389" y="156" key="SettingsEditor/0.40.1536.824@0.40.1536.824" timestamp="1638365015710" />
+    <state x="577" y="209" key="Vcs.Push.Dialog.v2" timestamp="1638373115996">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="577" y="209" key="Vcs.Push.Dialog.v2/0.40.1536.824@0.40.1536.824" timestamp="1638373115996" />
+    <state x="0" y="42" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1637670588694">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="0" y="42" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.40.1536.824@0.40.1536.824" timestamp="1637670588694" />
+    <state x="968" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1637594672172">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="968" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.40.1536.824@0.40.1536.824" timestamp="1637594672172" />
+    <state x="787" y="382" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1636820503318">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="787" y="382" key="git4idea.remote.GitConfigureRemotesDialog/0.40.1536.824@0.40.1536.824" timestamp="1636820503318" />
+    <state x="556" y="237" key="run.anything.popup" timestamp="1637672232011">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="556" y="237" key="run.anything.popup/0.40.1536.824@0.40.1536.824" timestamp="1637672232011" />
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1637585822324">
+      <screen x="0" y="40" width="1536" height="824" />
+    </state>
+    <state x="431" y="185" width="672" height="678" key="search.everywhere.popup/0.40.1536.824@0.40.1536.824" timestamp="1637585822324" />
+  </component>
+</project>

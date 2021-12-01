@@ -7,13 +7,13 @@ import MenuItem from './menuItem'
 export const defaultMenu = () => (
   <Menu defaultIndex='0' onSelect={(index) => {action(`clicked ${index} item`)}} >
     <MenuItem>
-      cool link
+      item 1
     </MenuItem>
     <MenuItem disabled>
       disabled
     </MenuItem>
     <MenuItem>
-      cool link 2
+       item 2
     </MenuItem>
   </Menu>
 )

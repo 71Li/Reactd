@@ -1,7 +1,8 @@
-import React, { FC, useRef, ChangeEvent, useState } from 'react'
-import axios from 'axios'
+import React, {ChangeEvent, FC, useRef, useState} from 'react'
+import Axios from 'axios'
 import UploadList from './uploadList'
 import Dragger from './dragger'
+
 export type UploadFileStatus = 'ready' | 'uploading' | 'success' | 'error'
 export interface UploadFile {
   uid: string;
@@ -123,7 +124,7 @@ export const Upload: FC<UploadProps> = (props) => {
         formData.append(key, data[key])
       })
     }
-    axios.post(action, formData, {
+    Axios.post(action, formData, {
       headers: {
         ...headers,
         'Content-Type': 'multipart/form-data'

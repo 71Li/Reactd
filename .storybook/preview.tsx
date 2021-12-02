@@ -8,7 +8,6 @@ import "../src/styles/index.scss"
 library.add(fas)
 
 // 全局配置样式，以及组件说明
-// @ts-ignore
 const wrapperStyle: React.CSSProperties = {
   padding: '20px 40px'
 }

@@ -71,7 +71,7 @@ const SubMenu:React.FC<SubMenuProps>= ({index, title, className, children}) => {
         })
         // 1.2.2 渲染由动画组件包裹的循环子组件
         return (
-            <Transition in={menuOpen} timeout={ 300} classNames={'submenu'} animation={"zoom-in-bottom"}>
+            <Transition in={menuOpen} timeout={ 300} classNames={'submenu'} animation={"zoom-in-bottom"} wrapper>
                 <ul className={subMenuClasses}>
                     {childrenComponent}
                 </ul>

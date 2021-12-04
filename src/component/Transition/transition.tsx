@@ -1,27 +1,32 @@
 import React from 'react'
-import { CSSTransition } from 'react-transition-group'
-import { CSSTransitionProps } from 'react-transition-group/CSSTransition'
+import {CSSTransition} from 'react-transition-group'
+import {CSSTransitionProps} from 'react-transition-group/CSSTransition'
 
 type AnimationName = 'zoom-in-top' | 'zoom-in-left' | 'zoom-in-bottom' | 'zoom-in-right'
 
+// 使用类型联合描述组件属性
 type TransitionProps = CSSTransitionProps & {
-  animation?: AnimationName,
-  wrapper? : boolean,
+  /** 动画类型 */
+  animation ?: AnimationName,
+  /** 是否包裹 */
+  wrapper ?: boolean,
 }
 
 const Transition: React.FC<TransitionProps> = (props) => {
   const {
-    children,
-    classNames,
     animation,
     wrapper,
+    children,
+    className,
     ...restProps
   } = props
+
   return (
     <CSSTransition
-      classNames = { classNames ? classNames : animation}
+      className = { className ? className : animation}
       {...restProps}
     >
+      {/* 套一层div,防止多个transition发生覆盖*/}
       {wrapper ? <div>{children}</div> : children}
     </CSSTransition>
   )

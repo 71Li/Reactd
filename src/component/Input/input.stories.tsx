@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
-import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
-import { Input } from './input'
+import React, {useState} from 'react'
+import {storiesOf} from '@storybook/react'
+import {action} from '@storybook/addon-actions'
+import {Input} from './input'
+
+// 作为受控组件的input, 受value影响
 const ControlledInput = () => {
-  const [value, setValue] = useState()
+  const [value, setValue] = useState('')
   return <Input value={value} defaultValue={value} onChange={(e) => {// @ts-ignore
       setValue(e.target.value)}}/>
 }
+
 const defaultInput = () => (
   <>
   <Input

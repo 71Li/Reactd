@@ -1,31 +1,26 @@
-import React, { FC, ReactElement, InputHTMLAttributes, ChangeEvent } from 'react'
+import React, {ChangeEvent, FC, InputHTMLAttributes, ReactElement} from 'react'
 import classNames from 'classnames'
-import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import {IconProp} from '@fortawesome/fontawesome-svg-core'
 import Icon from '../Icon/icon'
 
 type InputSize = 'lg' | 'sm'
 export interface InputProps extends Omit<InputHTMLAttributes<HTMLElement>, 'size' > {
-  /**是否禁用 Input */
+  /**是否禁用input */
   disabled?: boolean;
-  /**设置 input 大小，支持 lg 或者是 sm */
+  /** input大小 */
   size?: InputSize;
-  /**添加图标，在右侧悬浮添加一个图标，用于提示 */
+  /** 添加右侧提示图标 */
   icon?: IconProp;
-  /**添加前缀 用于配置一些固定组合 */
+  /** 添加前缀  */
   prepend?: string | ReactElement;
-  /**添加后缀 用于配置一些固定组合 */
+  /** 添加后缀 */
   append?: string | ReactElement;
+  /** input值改变触发的回调*/
   onChange? : (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
 /**
- * Input 输入框 通过鼠标或键盘输入内容，是最基础的表单域的包装。
- *
- * ~~~js
- * // 这样引用
- * import { Input } from 'vikingship'
- * ~~~
- * 支持 HTMLInput 的所有基本属性
+ * Input输入框 通过鼠标或键盘输入内容
  */
 export const Input: FC<InputProps> = (props) => {
   const {
@@ -44,12 +39,15 @@ export const Input: FC<InputProps> = (props) => {
     'input-group-append': !!append,
     'input-group-prepend': !!prepend
   })
+
+  // 对受控组件的缺点进行修补
   const fixControlledValue = (value: any) => {
     if (typeof value === 'undefined' || value === null) {
       return ''
     }
     return value
   }
+  // 受控组件value与非受控组件defaultValue的使用优先级
   if('value' in props) {
     delete restProps.defaultValue
     restProps.value = fixControlledValue(props.value)

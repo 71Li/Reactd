@@ -1,11 +1,17 @@
-import React, { FC } from 'react'
-import { ThemeProps } from '../Icon/icon'
+import React, {FC} from 'react'
+import {ThemeProps} from '../Icon/icon'
+
 export interface ProgressProps {
+  /** 百分比 */
   percent: number;
+  /** 进度条高度 */
   strokeHeight?: number;
+  /** 是否显示文字 */
   showText?: boolean;
-  styles?: React.CSSProperties;
+  /** 颜色主题 */
   theme?: ThemeProps;
+  /** 自定义styles */
+  styles?: React.CSSProperties;
 }
 
 const Progress: FC<ProgressProps> = (props) => {

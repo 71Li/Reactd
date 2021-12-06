@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom/extend-expect'
 import React from 'react'
-import Axios from 'axios'
+import axios from 'axios'
 import {fireEvent, render, RenderResult, waitFor} from '@testing-library/react'
 
 import {Upload, UploadProps} from './upload'
@@ -11,7 +11,7 @@ jest.mock('../Icon/icon', () => {
   }
 })
 jest.mock('axios')
-const mockedAxios = Axios as jest.Mocked<typeof Axios>
+const mockedAxios = axios as jest.Mocked<typeof axios>
 
 const testProps: UploadProps = {
   action: "fakeurl.com",
@@ -35,10 +35,10 @@ describe('test upload component', () => {
     // Axios.post.mockImplementation(() => {
     //   return Promise.resolve({'data': 'cool'})
     // })
-
     mockedAxios.post.mockResolvedValue({data: 'cool'})
     expect(uploadArea).toBeInTheDocument()
-    expect(fileInput).not.toBeVisible()
+    // expect(fileInput).not.toBeVisible()
+    expect(fileInput).toBeVisible()
     fireEvent.change(fileInput, {target: {files: [testFile]}})
     expect(queryByText('spinner')).toBeInTheDocument()
     await waitFor(() => {

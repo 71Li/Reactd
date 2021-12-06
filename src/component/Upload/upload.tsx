@@ -1,10 +1,10 @@
 import React, {ChangeEvent, FC, useRef, useState} from 'react'
-import Axios from 'axios'
+import axios from 'axios'
 import UploadList from './uploadList'
 import Dragger from './dragger'
 
 export type UploadFileStatus = 'ready' | 'uploading' | 'success' | 'error'
-// 1. 实现上传文件列表
+// 1. 创建上传文件列表的数据(6)
 // 1.1 上传文件接口
 export interface UploadFile {
   uid: string;
@@ -25,19 +25,28 @@ export interface UploadProps {
   onSuccess?: (data: any, file: File) => void;
   /** 请求失败的回调 */
   onError?: (err: any, file: File) => void;
-  defaultFileList?: UploadFile[];
   /** 上传前的限制函数: 是否上传|上传文件 */
   beforeUpload ?: (file: File) => boolean | Promise<File>;
+  /** 默认文件列表 */
+  defaultFileList ?: UploadFile[];
   /** 文件状态变化的回调*/
-  onChange?: (file: File) => void;
-  onRemove?: (file: UploadFile) => void;
-  headers?: {[key: string]: any };
-  name?: string;
-  data?: {[key: string]: any };
-  withCredentials?: boolean;
-  accept?: string;
-  multiple?: boolean;
-  drag?: boolean;
+  onChange ?: (file: File) => void;
+  /** 文件撤销的回调*/
+  onRemove ?: (file: UploadFile) => void;
+  /** post属性-自定义headers */
+  headers ?: {[key: string]: any };
+  /** post请求-自定义name  */
+  name ?: string;
+  /** post请求-自定义data  */
+  data ?: {[key: string]: any };
+  /** post请求-是否携带cookie  */
+  withCredentials ?: boolean;
+  /** 支持文件类型  */
+  accept ?: string;
+  /** 支持多文件  */
+  multiple ?: boolean;
+  /** 支持拖拽 */
+  drag ?: boolean;
 }
 
 export const Upload: FC<UploadProps> = (props) => {
@@ -63,12 +72,12 @@ export const Upload: FC<UploadProps> = (props) => {
   const fileInput = useRef<HTMLInputElement>(null)
   // 1.2 定义上传文件列表状态
   const [ fileList, setFileList ] = useState<UploadFile[]>(defaultFileList || [])
-  // 1.4 更新文件列表
+  // 1.3 定义更新文件状态函数
   const updateFileList = (updateFile: UploadFile, updateObj: Partial<UploadFile>) => {
     setFileList(prevList => {  // 异步方法更新
       return prevList.map(file => {
         if (file.uid === updateFile.uid) {
-          // 更新文件到原文件列表
+          // 覆盖更新的文件的某值
           return { ...file, ...updateObj }
         } else {
           return file
@@ -76,23 +85,30 @@ export const Upload: FC<UploadProps> = (props) => {
       })
     })
   }
-  // 点击逻辑 触发文件点击操作
+
+  // 点击区域逻辑 触发文件点击操作
   const handleClick = () => {
     if (fileInput.current) {
       fileInput.current.click()
     }
+    console.log("click")
   }
+
   // 文件变化逻辑
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files
     if(!files) {
       return
     }
+    // 进行文件上传过程
     uploadFiles(files)
     if (fileInput.current) {
       fileInput.current.value = ''
     }
   }
+  // 2. 上传文件列表的展示(2)
+  // 2.1 使用文件列表组件<UploadList>
+  // 2.2 定义文件撤销逻辑
   const handleRemove = (file: UploadFile) => {
     setFileList((prevList) => {
       return prevList.filter(item => item.uid !== file.uid)
@@ -101,7 +117,8 @@ export const Upload: FC<UploadProps> = (props) => {
       onRemove(file)
     }
   }
-  // 上传文件
+
+  // 1.4 文件上传过程
   const uploadFiles = (files: FileList) => {
     let postFiles = Array.from(files)
     postFiles.forEach(file => {
@@ -120,9 +137,10 @@ export const Upload: FC<UploadProps> = (props) => {
       }
     })
   }
-  // 文件上传
+
+  // 1.5 具体的文件上传请求
   const post = (file: File) => {
-    // 1.3 在文件上传开始 创建文件对象实例,更新文件列表
+    //  在文件上传开始 创建文件对象实例,更新文件列表
     let _file: UploadFile = {
       uid: Date.now() + 'upload-file',
       status: 'ready',
@@ -138,16 +156,17 @@ export const Upload: FC<UploadProps> = (props) => {
     // 创建表格数据，追加文件
     const formData = new FormData()
     formData.append(name || 'file', file)
-    if (data) {
+    if (data) { // 追加自定义数据
       Object.keys(data).forEach(key => {
         formData.append(key, data[key])
       })
     }
     // 发送post请求
-    Axios.post(action, formData, {
+    // 1.6 在上传中，成功失败回调时调用文件状态更新函数
+    axios.post(action, formData, {
       headers: {
         ...headers,
-        'Content-Type': 'multipart/form-data'
+        'Content-Type': 'multipart/form-data',
       },
       withCredentials,
       // 上传进度
@@ -180,30 +199,30 @@ export const Upload: FC<UploadProps> = (props) => {
       }
     })
   }
-
   return (
     <div className="upload-component">
+      {/* 支持拖拽上传*/}
       <div className="upload-input"
         style={{display: 'inline-block'}}
         onClick={handleClick}>
-
         {drag ?
             <Dragger onFile={(files) => {uploadFiles(files)}}>
               {children}
             </Dragger>
               : children}
-        <input
+      </div>
+      {/* 点击上传 */}
+      <input
           className="file-input"
-          style={{display: 'none'}}
+          // style={{display: 'none'}}
           ref={fileInput}
           onChange={handleFileChange}
           type="file"
           accept={accept}
           multiple={multiple}
-        />
+      />
 
-      </div>
-
+      {/* 2.1 使用文件列表组件 */}
       <UploadList
         fileList={fileList}
         onRemove={handleRemove}

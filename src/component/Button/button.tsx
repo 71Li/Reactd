@@ -2,8 +2,8 @@ import React, {AnchorHTMLAttributes, ButtonHTMLAttributes, FC} from "react";
 import classNames from "classnames";
 
 // 使用字符串字面量类型约束取值只能是其中之一
-type ButtonSize = 'lg'|'sm'|'default';
-type ButtonType = 'primary'|'danger'|'link'|'default'|'success'
+export  type ButtonSize = 'lg'|'sm'|'default';
+export type ButtonType = 'primary'|'danger'|'link'|'default'|'success'
 // 使用接口描述组件属性
 interface BaseButtonProps{
     /** 设置button禁用 */

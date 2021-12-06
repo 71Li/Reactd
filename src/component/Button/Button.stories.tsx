@@ -1,5 +1,5 @@
 import React from 'react';
-import Button, {ButtonSize, ButtonType} from "./button";
+import Button from "./button";
 import {storiesOf} from '@storybook/react'
 import {action} from "@storybook/addon-actions";
 
@@ -10,18 +10,18 @@ const defaultButton = () => (
 
 const buttonWithSize = ()=>(
     <>
-        <Button size={ButtonSize.Large}> large button </Button>
-        <Button size={ButtonSize.Small}> small button </Button>
+        <Button size={"lg"}> large button </Button>
+        <Button size={"sm"}> small button </Button>
     </>
 )
 
 const buttonWithType = ()=>(
     <>
-        <Button btnType={ButtonType.Default}> default button </Button>
-        <Button btnType={ButtonType.Primary}> Primary button </Button>
-        <Button btnType={ButtonType.Success}> Success button </Button>
-        <Button btnType={ButtonType.Danger}> Danger button </Button>
-        <Button btnType={ButtonType.Link} href={"https://www.baidu.com"}> Link button </Button>
+        <Button btnType={"default"}> default button </Button>
+        <Button btnType={"primary"}> Primary button </Button>
+        <Button btnType={"success"}> Success button </Button>
+        <Button btnType={"danger"}> Danger button </Button>
+        <Button btnType={ "link"} href={"https://www.baidu.com"}> Link button </Button>
 
     </>
 )

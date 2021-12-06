@@ -37,8 +37,8 @@ describe('test upload component', () => {
     // })
     mockedAxios.post.mockResolvedValue({data: 'cool'})
     expect(uploadArea).toBeInTheDocument()
-    // expect(fileInput).not.toBeVisible()
-    expect(fileInput).toBeVisible()
+    expect(fileInput).not.toBeVisible()
+    // expect(fileInput).toBeVisible()
     fireEvent.change(fileInput, {target: {files: [testFile]}})
     expect(queryByText('spinner')).toBeInTheDocument()
     await waitFor(() => {

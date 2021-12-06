@@ -214,7 +214,7 @@ export const Upload: FC<UploadProps> = (props) => {
       {/* 点击上传 */}
       <input
           className="file-input"
-          // style={{display: 'none'}}
+          style={{display: 'none'}}
           ref={fileInput}
           onChange={handleFileChange}
           type="file"
